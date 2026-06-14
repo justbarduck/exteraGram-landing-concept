@@ -1,6 +1,3 @@
-# exteraGram-landing-concept
-Markdown
-
 # exteraGram Landing Concept
 
 A fan-made, high-performance landing page concept for [exteraGram](https://exteragram.app). 
