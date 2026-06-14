@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exteraGram — Advanced Telegram Client</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="content-wrapper">
+        <header>
+            <svg class="logo-img" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="256" cy="256" r="256" fill="#F43A3A" fill-opacity="0.25"/>
+                <path transform="translate(-20, -20)" d="M372 165L140 263.5c-12.5 5.3-12.5 23.2 0 28.5l84 35.5c9 3.8 19.3 1.7 26-5.3l85-90.5c2.3-2.5 6.3 1 4.2 3.7l-77 97.5c-6.3 8-6 19.8 0.6 27.5l55 64.5c9.5 11.2 27.8 8.4 33.3-4.8L405 204c6.8-16.2-4-32.8-21.5-35.5L372 165z" fill="#FCD0D3"/>
+            </svg>
+            <nav class="main-nav">
+                <button onclick="showPage('home')">Home</button>
+                <button onclick="showPage('about')">About</button>
+                <button onclick="showPage('faq')">FAQ</button>
+                <button onclick="showPage('features-page')">Features</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="page active">
+                <section class="hero">
+                    <h1>exteraGram</h1>
+                    <p class="tagline">An advanced, third-party Telegram client. Experience Material 3 design and ultimate power user features.</p>
+                    <a href="https://exteragram.app" target="_blank"><button class="cta-btn">Try Now</button></a>
+                </section>
+                <section class="features">
+                    <div class="card"><h3>AI Chat</h3><p>Connect your custom AI endpoints directly into the app.</p></div>
+                    <div class="card"><h3>Plugins</h3><p>Write Python scripts to alter UI layout or logic.</p></div>
+                    <div class="card"><h3>Themes</h3><p>Dynamic Monet engine coloring for perfect look.</p></div>
+                </section>
+            </section>
+
+            <section id="about" class="page" style="display: none;">
+                <section class="hero"><h1>About exteraGram</h1></section>
+                <div class="card" style="max-width: 600px; margin: 0 auto;">
+                    <h3>Power User Experience</h3>
+                    <p>Designed for those who want Telegram to do more. Open source and secure.</p>
+                </div>
+            </section>
+
+            <section id="faq" class="page" style="display: none;">
+                <section class="hero"><h1>FAQ</h1></section>
+                <div class="features">
+                    <div class="card"><h3>Is it safe?</h3><p>Yes, build is fully reproducible and open-source.</p></div>
+                    <div class="card"><h3>Plugins?</h3><p>Supported via custom API hooks and Python.</p></div>
+                </div>
+            </section>
+
+            <section id="features-page" class="page" style="display: none;">
+                <section class="hero"><h1>Why exteraGram?</h1></section>
+                <div class="card" style="max-width: 800px; margin: 0 auto; overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; color: #fff;">
+                        <thead><tr style="border-bottom: 1px solid #444;"><th style="padding: 15px;">Feature</th><th style="padding: 15px;">Telegram</th><th style="padding: 15px;">exteraGram</th></tr></thead>
+                        <tbody>
+                            <tr><td style="padding: 15px;">AI Integration</td><td style="padding: 15px; color: #888;">No</td><td style="padding: 15px; color: #ff6b75;">Yes</td></tr>
+                            <tr><td style="padding: 15px;">Python Plugins</td><td style="padding: 15px; color: #888;">No</td><td style="padding: 15px; color: #ff6b75;">Yes</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
