@@ -1,17 +1,13 @@
-// --- ЛОГИКА НАВИГАЦИИ ---
 function showPage(pageId) {
-    // Скрываем все страницы
     document.querySelectorAll('.page').forEach(page => {
         page.style.display = 'none';
     });
-    // Показываем нужную страницу
     const targetPage = document.getElementById(pageId);
     if (targetPage) {
         targetPage.style.display = 'block';
     }
 }
 
-// --- ЛОГИКА ЧАСТИЦ (Background) ---
 const canvas = document.getElementById('particles-canvas');
 const ctx = canvas.getContext('2d');
 
@@ -97,11 +93,9 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-// Запуск
 init();
 animate();
 
-// Устанавливаем начальную страницу при загрузке
 document.addEventListener('DOMContentLoaded', () => {
     showPage('home');
 });
